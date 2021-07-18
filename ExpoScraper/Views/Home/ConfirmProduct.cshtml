@@ -1,0 +1,48 @@
+﻿@{
+}
+@model ConfirmProductModel;
+
+<div id="myDiv" class="row">
+    <div class="col-md-12">
+        <table style="width:100%">
+            <thead>
+                <tr>
+                    <th>ImageName</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.amazonProductModel)
+                {
+                    <tr>
+                        <th><a href="@Html.Raw(@item.Url)"> @item.ProductName</a></th>
+
+                        <th><input type="button" class="btn btn-primary" data-form-method="post" onclick="location.href='@Url.Action("CreateWixProduct", "Home", new {urlToSearch = @Html.Raw(item.Url)}, null)'" value="Process" /></th>
+                    </tr>
+                }
+                <tr>
+                    <th><a href=""> Skip</a></th>
+                    <th><input type="button" class="btn btn-primary" data-form-method="post" onclick="location.href='@Url.Action("CreateWixProduct", "Home", new {urlToSearch = ""}, null)'" value="Skip" /></th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-12">
+        <h1>Original Product</h1>
+        <p>@Model.OriginalImage</p>
+        <img class="preview-img" src="@Model.OriginalImage" />
+        <input id="customURL" placeholder="Custom URL" />
+        <input id="submitCustom" class="button button-submit submitCustom" type="button" class="btn btn-primary" value="Send Custom URL" />
+
+    </div>
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+<script>
+    $(function () {
+        $("#submitCustom").click(function () {
+            var customInput = document.getElementById("customURL").value;
+            window.location = '/Home/CreateWixProduct?urlToSearch=url=' + customInput;
+        });
+    });
+</script>

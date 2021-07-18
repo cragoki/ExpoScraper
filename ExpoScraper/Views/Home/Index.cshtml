@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model List<ImageNameModel>;
+
+<div class="row">
+    <div class="col-md-12">
+        <h1>There are: @Model.Count() Products</h1>
+    </div>
+    <div class="col-md-12">
+        <table style="width:100%">
+            <thead>
+                <tr>
+                    <th><h3>ImageName</h3></th>
+                    <th><h3>Actions</h3></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var image in Model)
+                {
+                <tr class="tbl-row">
+                    <th>@image.ImageName</th>
+                    <th><input type="button" class="btn btn-primary" data-form-method="post" onclick="location.href='@Url.Action("ConfirmProduct", "Home", new {searchTerm = image.ImageName, imagePath = image.ImagePath}, null)'" value="Process" /></th>
+                </tr>
+                }
+
+
+            </tbody>
+        </table>
+
+    </div>
+
+</div>

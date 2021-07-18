@@ -1,0 +1,62 @@
+﻿@model WixProductModel;
+
+<div class="row">
+    <form method="post" action="@Url.Action("GenerateExcel", "Home", new {model = Model})">
+        <div class="col-md-12">
+            <div class="col-md-6">
+                @Html.LabelFor(x => x.name)
+                @Html.EditorFor(x => x.name)
+            </div>
+            <div class="col-md-6">
+                @Html.LabelFor(x => x.weight)
+                @Html.EditorFor(x => x.weight)
+            </div>
+        </div>
+        <div class="col-md-12">
+
+            @Html.LabelFor(x => x.priceData.price)
+            @Html.EditorFor(x => x.priceData.price)
+
+
+        </div>
+        <div class="col-md-12">
+            @Html.LabelFor(x => x.description)
+            @Html.TextAreaFor(x => x.description, new { @class = "desc" })
+        </div>
+        <div class="col-md-12">
+            @Html.LabelFor(x => x.category)
+            @Html.EditorFor(x => x.category)
+        </div>
+        <div class="col-md-12">
+            @Html.LabelFor(x => x.ribbon)
+            @Html.EditorFor(x => x.ribbon)
+        </div>
+        <div class="col-md-12">
+            @Html.LabelFor(x => x.sku)
+            @Html.EditorFor(x => x.sku)
+        </div>
+        <div class="col-md-12">
+            <div class="col-md-6">
+                @Html.LabelFor(x => x.customname)
+                @Html.EditorFor(x => x.customname)
+            </div>
+            <div class="col-md-6">
+                @Html.LabelFor(x => x.customdesc)
+                @Html.EditorFor(x => x.customdesc)
+            </div>
+
+        </div>
+        @if (Model != null && !string.IsNullOrEmpty(Model.imageUrl))
+        {
+            <div class="col-md-12">
+                <img class="preview-img" src="@Model.imageUrl" />
+            </div>
+            <div class="col-md-12">
+                <img class="preview-img" src="..@Model.existingImage" />
+            </div>
+            @Html.HiddenFor(x => x.imageUrl);
+        }
+
+        <input type="submit" value="Submit Data" />
+    </form>
+</div>

@@ -1,0 +1,109 @@
+├───ADAPTIL -> DONE
+├───ADVANCE
+│   ├───ADVANCE GATO
+│   │   └───QUITADPS
+│   └───ADVANCE PERRO
+├───antos
+│   ├───GATOSD SNACKS
+│   ├───Nueva carpeta
+│   └───PERROS SNACKS
+├───ARPPE
+│   ├───GATOS
+│   └───PERROS
+│       └───ACCESORIOS
+├───BAYER
+├───beeztees
+├───CALIER
+├───CUNIPIC
+│   ├───ALPHA PRO
+│   ├───CARE
+│   ├───ERA - SNACK
+│   ├───NATURALISS
+│   ├───NATURLINE
+│   ├───PREMIUM LIFE
+│   └───SOL HENO
+├───earth rated
+├───FELIWAY
+├───GRUPO YAGU
+│   ├───ADVANTIX
+│   ├───COMIDA HUMEDA
+│   ├───COMIDA SECA
+│   ├───GATOS
+│   ├───HIGINE PERROS
+│   ├───PAJAROS
+│   │   ├───PAJAROS ACCESORIOS
+│   │   └───PAJAROS MEDICAMENTOS Y VITAMINAS
+│   ├───PERROS ACCESORIOS
+│   ├───REPTILES
+│   └───ROEDORES
+├───HILLS GATO
+├───HILLS PERRO
+│   └───virbac
+│       ├───ANTIPARASITARIOS
+│       ├───COMPLEMENTOS
+│       ├───HIGIENE
+│       └───NUTRICION
+├───IMAGENES
+│   ├───DIBAQ GATOS
+│   └───DIBAQ PERROS
+│       └───humedos
+├───KOME
+│   ├───KOME GATOS
+│   └───KOME PERROS
+├───KONG
+│   ├───GATOS
+│   └───PERROS
+├───MOLY
+│   ├───GATOS
+│   ├───PECES
+│   └───PERROS
+├───NAYECO
+│   ├───GATO
+│   │   ├───ACCESORIOS
+│   │   └───GATERA
+│   ├───JUGUETES
+│   ├───PERRO
+│   │   ├───ACCESORIOS
+│   │   ├───CASETAS
+│   │   ├───HIGIENE
+│   │   ├───JUGUETES
+│   │   ├───PASEO
+│   │   └───ROPA
+│   └───REPTILES
+├───PADOVAN
+│   ├───AVES
+│   │   ├───ALIMENTOS BASICO
+│   │   └───ALIMENTOS COMPLEMENTARIOS
+│   ├───CONEJOS Y RODEORES
+│   ├───PECES
+│   └───PERROS Y GATOS
+├───PURINA
+│   └───GOLD
+├───ROYAL CANIN GATOS
+├───ROYAL CANIN PERROS
+├───SANICAT
+├───SCALIBUR
+├───SERA
+│   ├───SERA AGUA DULCE
+│   └───SERA ESTANQUE DE JARDIN
+├───TABERNIL
+├───VECTRA
+├───VERSELE LAGA
+│   ├───PAJARO
+│   └───ROEDORES
+├───VETIQ
+├───VETPLUS
+│   ├───GATOS
+│   └───PERROS
+└───virbac
+    ├───GATOS
+    │   ├───ALIMENTACION
+    │   ├───ANTIPARASITARIOS
+    │   ├───COMPORTAMIENTO
+    │   ├───HIGIENE
+    │   └───HIGIENE BUCODENTAL
+    └───PERROS
+        ├───ANTIPARASITARIOS
+        ├───COMPLEMENTOS
+        ├───HIGIENE
+        └───NUTRICION

@@ -1,0 +1,9 @@
+Sprint #1:
+
+-> Authentication Call/Refresh Token: https://dev.wix.com/api/rest/authorization/oauth-2/request-an-access-token
+
+-> Redirect to home and rename image after successful Wix Call
+
+-> Introduce Add Media into the call flow to send the image for each product
+
+-> Test
